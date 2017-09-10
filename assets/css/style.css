@@ -13,8 +13,9 @@ body {
 
 @media (min-width: 800px) {
 .wrapper {
+    width: 1200px;
 	margin: 0 auto;
-	padding: 0 5px;
+	padding: 0 15px;
 }
 
 .visually-hidden {
@@ -43,6 +44,7 @@ body {
 
 .main-nav__item a{
 	font-size: 13px;
+    text-transform: uppercase;
 	color: #fff	;
 	opacity: 0.75;
 	padding: 35px 35px;
@@ -65,6 +67,7 @@ body {
 	line-height: 71px;
 	color: #fff;
 	text-align: center;
+  text-transform: uppercase;
 }
 
 .header-content__description {
@@ -75,5 +78,194 @@ body {
 	margin-top: 15px;
 	text-decoration: underline;
 }
+  
+.header-content {
+    text-align: center;
+}
+  
+.btn {
+  display: inline-block;
+  margin-top: 90px;
+  font-size: 13px;
+  line-height: 21px;
+  padding: 10px 50px;
+  background-color: #e84545;
+  text-transform: uppercase;
+  margin-bottom: 150px;
+}
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 40px;
+    text-align: center;
+  }  
+  
+  .advantages__item {
+    flex: 1 1 31%;
+    padding-top: 216px;
+    position: relative;
+  }
+  
+  .advantages__item::before {
+    content: "";
+    width: 87px;
+    height: 87px;
+    position: absolute;
+    top: 95px;
+    left: calc(50% - (80px/2));
+  }
+  
+  .advantages__item:nth-child(1)::before {
+    background: url(../img/sprite.png) no-repeat -23px -4px;
+  }
+  
+  .advantages__item:nth-child(2)::before {
+    background: url(../img/sprite.png) no-repeat -23px -129px;
+  }
+  
+  .advantages__item:nth-child(3)::before {
+    background: url(../img/sprite.png) no-repeat -23px -246px;
+  }
+  
+  .advantages__item:nth-child(4)::before {
+    background: url(../img/sprite.png) no-repeat -23px -367px;
+  }
+  
+  .advantages__item:nth-child(5)::before {
+    background: url(../img/sprite.png) no-repeat -23px -473px;
+  }
+  
+  .advantages__item:nth-child(6)::before {
+    background: url(../img/sprite.png) no-repeat -23px -613px;
+  }
+  
+  .advantages__item:nth-child(2),
+  .advantages__item:nth-child(5) {
+    margin: 0 30px;
+  }
+  
+  .advantages__item-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2d3033;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .advantages__item-description {
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+    text-transform: uppercase;
+    }
+  
+  .page-footer {
+    background-color: #3a3e64;
+    margin: -3px;
+  }
+  
+  .page-footer__main-information {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 80px;
+  }
+  
+  .page-footer__socials,
+  .page-footer__about {
+    flex: 3;
+  }
+  
+  .page-footer__contacts {
+    flex: 2;
+  }
+  
+  .page-footer__contacts p {
+    opacity: 0.5;
+  }
+  
+  .page-footer__contacts,
+  .page-footer__socials,
+  .page-footer__about {  
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .page-footer__contacts b,
+  .page-footer__socials b,
+  .page-footer__about b {
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 35px;
+  }
+  
+  .social-item {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .social-item span{
+    font-size: 0;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    left: -43px;
+    top: -1px;
+  }
+  
+  
+  .social-item::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-item--fb::after {
+    background: url("../img/fb.png") no-repeat  10px 5px;
+    top: 3px;
+    left: -39px;
+  }
+  
+  .social-item--tw::after {
+    background: url("../img/twitter.png") no-repeat  10px 5px;
+    top: 5px;
+    left: -45px;
+  }
+  
+  .social-item--ins::after {
+    background: url("../img/Inst.png") no-repeat  10px 5px;
+    top: 5px;
+    left: -44px;
+  }  
+  
+  .social-list {
+    text-align: center;
+    margin-left: 90px;
+  }
+  
+  .page-footer__socials b {
+     display: block;
+    text-align: center;
+}
+  
+  .page-footer__about p{
+    opacity: 0.5;
+  }
+  
+  .page-footer__copyright {
+    padding: 30px 0;
+    text-align: center;
+    opacity: 0.5;
+    margin-right: 35px;
+    color: #fff;
+    background-color: #313454;
+    margin-top: 80px;
+  }
+  
 }
 
