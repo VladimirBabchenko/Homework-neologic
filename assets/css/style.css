@@ -93,6 +93,10 @@ body {
   text-transform: uppercase;
   margin-bottom: 150px;
 }
+  
+  .advantages {
+    margin-bottom: 120px;
+  }
 
   .advantages__list {
     display: flex;
@@ -267,5 +271,78 @@ body {
     margin-top: 80px;
   }
   
+  .team {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+  
+  .team__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team figcaption {
+    padding-top: 13px;
+    padding-bottom: 12px;
+    font-size: 22px;
+    color: #2d3033;
+  }
+  
+  .team h4 {
+    padding-bottom: 25px;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: #e84545;
+  }
+  
+  .team p {
+    padding-bottom: 28px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+  }
+  
+  .team__socials {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid #e8ecee; 
+    font-size: 0;
+  }
+  
+  .social-fb, .social-tw {
+    margin-right: 4px;
+  }
+  
+  .social-fb::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../img/sprite.png") -10px -713px;
+    top: 7px;
+    left: 9px;
+  }
+  
+    .social-tw::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../img/sprite.png") -51px -713px;
+    top: 7px;
+    left: 9px;
+  }
+  
+    .social-in::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../img/sprite.png") -95px -713px;
+    top: 7px;
+    left: 9px;
+  }
 }
 
